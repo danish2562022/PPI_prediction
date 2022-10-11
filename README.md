@@ -19,16 +19,19 @@
 		ii.) randomly sample from postive sample and sequences similarity < 80 percent  
         b. Dataset imabalalance recommended to replicate real world scenario: 1:10 (has been proven reasonable to predict PPI)
         c. Phenotype features + Sequences
-        d. 
-        e. DeepVHPPI: First trained on supervised structure prediction, and then fine tune for PPI
+        d. DL2Vec, W2V
+        e. length of sequences max: 1000(cut and extend)
         f. Alphafold-2 could be used for PPI 
 </pre>
-3. A SARS-CoV-2 protein interaction map reveals targets for drug repurposing:<br/>
+![alt text](images/DeepViral_workflow.png)
+
+3. A SARS-CoV-2 protein interaction map reveals targets for drug repurposing(Nature articles-Gold Standard):<br/>
 <pre>
         a.Here we cloned, tagged and expressed 26 of the 29
 	  SARS-CoV-2 proteins in human cells and identifed the human proteins that physically
 	  associated with each of the SARS-CoV-2 proteins using afnity-purifcation mass spectrometry,
 	  identifying 332 high-confdence protein–protein interactions between SARS-CoV-2 and human proteins
+	b. MIST> 0.75
 </pre>
 	
 ### Database Information
