@@ -5,7 +5,7 @@
 	Negative sampling: Dissimilarity-Based Negative Sampling(A->B , B->C then A and C cannot be negative sample)
 	Dataset imabalalance recommended to replicate real world scenario: 1:10 (has been proven reasonable to predict PPI)						
 </pre>
-[alt text](images/ppi_table.png)	
+![alt text](images/ppi_table.png)	
 ### Database Information
 1. HPIDB 2.0: 45,238 manually curated entries PPI
 2. HVIDB: 48,643 experimentally verified human–virus PPIs covering 35 virus families, 6633 virally targeted host complexes, 3572 host
