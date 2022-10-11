@@ -1,10 +1,25 @@
 
-### Research Paper
+### Research Papers
 1. Deep Learning-Powered Prediction of Human-Virus Protein-Protein Interactions(Dec-2021):<br/>
 <pre>
-	Negative sampling: Dissimilarity-Based Negative Sampling(A->B , B->C then A and C cannot be negative sample)
-	Dataset imabalalance recommended to replicate real world scenario: 1:10 (has been proven reasonable to predict PPI)						
+	a. Negative sampling: Dissimilarity-Based Negative Sampling(A->B , B->C then A and C cannot be negative sample)
+	b. Dataset imabalalance recommended to replicate real world scenario: 1:10 (has been proven reasonable to predict PPI)						
+	c. Word2vec, Doc2vec and Node2vec
+	d. Train on large human PPI, and later fine tune on specific PPI(eg. Human-SARs-Cov-2 PPIs)
+	e. DeepVHPPI: First trained on supervised structure prediction, and then fine tune for PPI
+	f. Alphafold-2 could be used for PPI 
 </pre>
+2. Deep Viral: prediction of novel virus-host interactions from protein sequences and infectious disease phenotypes(April-2021):<br/>
+<pre>
+        a. Negative sampling:
+		i.) 
+        b. Dataset imabalalance recommended to replicate real world scenario: 1:10 (has been proven reasonable to predict PPI)
+        c. Word2vec, Doc2vec and Node2vec
+        d. Train on large human PPI, and later fine tune on specific PPI(eg. Human-SARs-Cov-2 PPIs)
+        e. DeepVHPPI: First trained on supervised structure prediction, and then fine tune for PPI
+        f. Alphafold-2 could be used for PPI 
+</pre>
+
 ![alt text](images/ppi_table.png)	
 ### Database Information
 1. HPIDB 2.0: 45,238 manually curated entries PPI
