@@ -17,21 +17,48 @@
         b. Negative sampling:
 		i.) Dissimilarity-Based Negative Sampling
 		ii.) randomly sample from postive sample and sequences similarity < 80 percent  
-        b. Dataset imabalalance recommended to replicate real world scenario: 1:10 (has been proven reasonable to predict PPI)
-        c. Phenotype features + Sequences
-        d. DL2Vec, W2V
-        e. length of sequences max: 1000(cut and extend)
-        f. Alphafold-2 could be used for PPI 
+        c. Dataset imabalalance recommended to replicate real world scenario: 1:>2 (has been proven reasonable to predict PPI)
+        d. Phenotype features + Sequences
+        e. DL2Vec, W2V
+        f. Keep test set completely different than train set(to prevent data leakage)
+        g. Evaluation dataset sufferrs from several drawbacks
+	h. Dataset szie: 24,678 positive interactions and 1,066 viral protein from 14 virus families and 292 virus taxa(length<=1000)
+	 
 </pre>
 ![alt text](images/DeepViral_workflow.png)
+3. DWPPI- A Deep Learning Approach for predicting PPI in plants based multi-source information with a large scale biological network(March-2022):<br/>
+<pre>
+        a. Dataset sources: Plant PPIs
+        b. Negative sampling:
+                i.) randomly sample   
+        c. Dataset balance
+        d. Bipartite graph + deepwalk --> CBOW-W2V(4-mer) --> 64 Dim -->LR,DT,
+        e. Dataset szie: 28110+81989+51514  positive interactions 
 
-3. A SARS-CoV-2 protein interaction map reveals targets for drug repurposing(Nature articles-Gold Standard):<br/>
+</pre>
+4. Transfer Learning via multi-scale convolutional neural layers for human-virus ppi prediction(16 July-2021):<br/>
+<pre>
+        a. Dataset sources: Plant PPIs                                                                                                                                                               
+        b. Negative sampling:
+                i.) randomly sample   
+        c. Dataset balance                                                                                                   
+        d. Bipartite graph + deepwalk --> CBOW-W2V(4-mer) --> 64 Dim -->LR,DT,
+        e. Dataset szie: 28110+81989+51514  positive interactions                                                                               
+
+</pre>
+
+![alt text](images/Transfer_learning_ppi.png)
+
+
+
+5. A SARS-CoV-2 protein interaction map reveals targets for drug repurposing(Nature articles-Gold Standard):<br/>
 <pre>
         a.Here we cloned, tagged and expressed 26 of the 29
 	  SARS-CoV-2 proteins in human cells and identifed the human proteins that physically
 	  associated with each of the SARS-CoV-2 proteins using afnity-purifcation mass spectrometry,
 	  identifying 332 high-confdence protein–protein interactions between SARS-CoV-2 and human proteins
 	b. MIST> 0.75
+	c. SARS sequence from GenScript
 </pre>
 	
 ### Database Information
