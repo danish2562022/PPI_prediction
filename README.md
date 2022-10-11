@@ -2,7 +2,7 @@
 ### Research Papers
 1. Deep Learning-Powered Prediction of Human-Virus Protein-Protein Interactions(Dec-2021):<br/>
 <pre>
-	a. Negative sampling: Dissimilarity-Based Negative Sampling(A->B , B->C then A and C cannot be negative sample)
+	a. Negative sampling: Dissimilarity-Based Negative Sampling(A->B(sequence similarity > Threshold) , B->C(positive interaction) then A and C cannot be negative sample)
 	b. Dataset imabalalance recommended to replicate real world scenario: 1:10 (has been proven reasonable to predict PPI)						
 	c. Word2vec, Doc2vec and Node2vec
 	d. Train on large human PPI, and later fine tune on specific PPI(eg. Human-SARs-Cov-2 PPIs)
@@ -33,18 +33,26 @@
                 i.) randomly sample   
         c. Dataset balance
         d. Bipartite graph + deepwalk --> CBOW-W2V(4-mer) --> 64 Dim -->LR,DT,
-        e. Dataset szie: 28110+81989+51514  positive interactions 
+        e. Dataset size: 28110+81989+51514  positive interactions 
 
 </pre>
 4. Transfer Learning via multi-scale convolutional neural layers for human-virus ppi prediction(16 July-2021):<br/>
 <pre>
-        a. Dataset sources: Plant PPIs                                                                                                                                                               
-        b. Negative sampling:
-                i.) randomly sample   
-        c. Dataset balance                                                                                                   
-        d. Bipartite graph + deepwalk --> CBOW-W2V(4-mer) --> 64 Dim -->LR,DT,
-        e. Dataset szie: 28110+81989+51514  positive interactions                                                                               
-
+        a. Dataset sources: HPIDB, VirHostNet, VirusMentha, PHISTO, and PDB                                                                                                                    
+        b. Dataset Target for fine-tuning: human-SARS-CoV-2-PPIs(568)
+	c. Dataset construction procedure:
+		i.) Remove ppi which detected only once
+	       ii.) Remove non-physical interactions
+	      iii.) Remove interaction between proteins without PSSM features	
+	c. Negative sampling:
+                i.) randomly sample--> Dissimlarity based negative sampling  
+        c. Dataset imbalance(1:10)
+	d. 5-fold CV                                                                                                   
+        e. sequences -->PSSMs(Sequence profile)-->embedded vectors-->siamese CNN --> MLP --> prediction score 
+        f. Dataset size: 31,381(9880 in HIV, 5966 in Herpes, 5099 in Papilloma, 3044 in Influenze, 1300 in Hepatitis, 927 in Dengue, 709 in Dengue)                                                                              
+	g. Accuracy: 93%
+	i. Dataset available: https://github.com/XiaodiYangCAU/TransPPI/tree/main/sample
+	j. Ensemble of 5 models(AvgX)
 </pre>
 
 ![alt text](images/Transfer_learning_ppi.png)
