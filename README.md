@@ -1,10 +1,11 @@
-<pre>
+
 ### Research Paper
 1. Deep Learning-Powered Prediction of Human-Virus Protein-Protein Interactions(Dec-2021):<br/>
-	Negative sampling: Dissimilarity-Based Negative Sampling(A->B , B->C then A and C cannot be negative sample)<br/>
+<pre>
+	Negative sampling: Dissimilarity-Based Negative Sampling(A->B , B->C then A and C cannot be negative sample)
 	Dataset imabalalance recommended to replicate real world scenario: 1:10 (has been proven reasonable to predict PPI)						
-
-
+<pre/>
+	
 ### Database Information
 1. HPIDB 2.0: 45,238 manually curated entries PPI
 2. HVIDB: 48,643 experimentally verified human–virus PPIs covering 35 virus families, 6633 virally targeted host complexes, 3572 host
@@ -25,4 +26,4 @@ viruses and 129 Gene Expression Omnibus series of differentially expressed genes
 ### Task with date
 
 
-</pre>
+
