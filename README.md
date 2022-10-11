@@ -1,6 +1,7 @@
 ### Research Paper
 1. Deep Learning-Powered Prediction of Human-Virus Protein-Protein Interactions(Dec-2021):
-	
+	Negative sampling: Dissimilarity-Based Negative Sampling(A->B , B->C then A and C cannot be negative sample)
+	Dataset imabalalance recommended to replicate real world scenario: 1:10 (has been proven reasonable to predict PPI)						
 
 
 ### Database Information
