@@ -4,7 +4,7 @@
 <pre>
 	Negative sampling: Dissimilarity-Based Negative Sampling(A->B , B->C then A and C cannot be negative sample)
 	Dataset imabalalance recommended to replicate real world scenario: 1:10 (has been proven reasonable to predict PPI)						
-<pre/>
+</pre>
 	
 ### Database Information
 1. HPIDB 2.0: 45,238 manually curated entries PPI
