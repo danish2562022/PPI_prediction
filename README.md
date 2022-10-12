@@ -72,12 +72,21 @@
 	c. Negative sampling:
 			Dissimilarity based negative sampling method: Read Denovo paper and this paper again for full understanding
 														Really nice way to do it
-	c. Dataset size: 22,383 positive pairs (5882 human and 996 virus proteins) 
-	c. Dataset and API: http://kurata35.bio.kyutech.ac.jp/LSTM-PHV/introduction_page
+	d. Dataset size: 22,383 positive pairs (5882 human and 996 virus proteins) from HPIDB 
+					 7371 positive pairs of SARS-cov3 and human  from BIOGRID(Covid-19 coronavirus project 4.3.195)	
+					 8412 PPis human and nonviral pathogens (3317 human proteins and 3068 virus proteins)(only for testing)
+	e. Dataset and API: http://kurata35.bio.kyutech.ac.jp/LSTM-PHV/introduction_page
+	f. Model:  LSTM-->Concatante --> FC -->prediction
+				Weighted cross entropy to deal with imbalance dataset, early stopping
+	g. Metrics used to evaluate: MCC,F1,AUPRC,ACC, SN,SP
+	i. Check the graphs for output visualization, could be useful
+				--> UMAP clearly visualizes the positive samples and negative samples difference
 </pre>
+![alt text](images/lstm_pvg.png)
 
-
-
+6. Transfer Learning for predicting virus-host protein interactions for novel virus sequences
+<pre>
+</pre>
 
 5. A SARS-CoV-2 protein interaction map reveals targets for drug repurposing(Nature articles-Gold Standard):<br/>
 <pre>
@@ -93,6 +102,12 @@
 <pre>
     a. Based on sequence identity
 </pre>
+6. Deep ppi codes and dataset<br/>
+<pre>
+    a. https://github.com/gdario/deep_ppi
+</pre>
+
+
 	
 ### Database Information
 1. HPIDB 2.0: 45,238 manually curated entries PPI
