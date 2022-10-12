@@ -53,20 +53,45 @@
 	g. Accuracy: 93%
 	i. Dataset available: https://github.com/XiaodiYangCAU/TransPPI/tree/main/sample
 	j. Ensemble of 5 models(AvgX)
+	k. Intersting to read how they divided dataset and fine tuned it and also the result analysis part
 </pre>
 
 ![alt text](images/Transfer_learning_ppi.png)
+
+5. LSTM-PHV: prediction of human-virus protein-protein interactions by LSTM with word2vec:<br/>
+<pre>
+    a.Here we cloned, tagged and expressed 26 of the 29
+	  SARS-CoV-2 proteins in human cells and identifed the human proteins that physically
+	  associated with each of the SARS-CoV-2 proteins using afnity-purifcation mass spectrometry,
+	  identifying 332 high-confdence protein–protein interactions between SARS-CoV-2 and human proteins
+	b. Database: HPIDB 3.0
+	        How dataset was created?
+				--> MI score >= 0.3 are kept. MI score is the confidence score assigned to each PPI from <b>Intact</b> and <b>VirHostnet</b>
+				--> Redundant PPIs were excluded by using CD-HIIT with an identity threshold of 0.95
+				--> Removed proteins of length less than 30 and more than 1000<b>(30 <= len(proteins) <= 1000)</b>
+	c. Negative sampling:
+			Dissimilarity based negative sampling method: Read Denovo paper and this paper again for full understanding
+														Really nice way to do it
+	c. Dataset size: 22,383 positive pairs (5882 human and 996 virus proteins) 
+	c. Dataset and API: http://kurata35.bio.kyutech.ac.jp/LSTM-PHV/introduction_page
+</pre>
+
 
 
 
 5. A SARS-CoV-2 protein interaction map reveals targets for drug repurposing(Nature articles-Gold Standard):<br/>
 <pre>
-        a.Here we cloned, tagged and expressed 26 of the 29
+    a.Here we cloned, tagged and expressed 26 of the 29
 	  SARS-CoV-2 proteins in human cells and identifed the human proteins that physically
 	  associated with each of the SARS-CoV-2 proteins using afnity-purifcation mass spectrometry,
 	  identifying 332 high-confdence protein–protein interactions between SARS-CoV-2 and human proteins
 	b. MIST> 0.75
 	c. SARS sequence from GenScript
+</pre>
+
+6. ProteinNet: a standardized dataset for ml of protein structure<br/>
+<pre>
+    a. Based on sequence identity
 </pre>
 	
 ### Database Information
