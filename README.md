@@ -86,6 +86,21 @@
 
 6. Transfer Learning for predicting virus-host protein interactions for novel virus sequences
 <pre>
+	a. Database: i.) Virus-host dataset from HPIDB(22,653-pairs)--> Training
+				 ii.) SARs-cov-2-human interaction positive pairs from BioGrid(13,947 pairs) --> only for test
+				iii.) H1V1 - human interaction pairs(10,955 positive pairs except virus H1V1-human in train set and 381 true PPI, 381 negative between             H1V1 		and     Human for test set)
+				iv.) Ebola - human interaction pairs(11,341 positive pairs except virus Ebola-human in train set and 150 true PPI,150 negative between Ebola and 	Human for test set)
+				v.) Barman paper dataset(testing dataset is not completely unseen) (1036 positive + 1036 negative pairs)
+				vi.) denovo paper dataset: 
+					<b>Note: All datasets are available</b>
+							
+	b. Negative sampling:
+			Dissimilaroty-based negative sampling
+	c. 1:10 positive:negative ratio
+	d. Model:
+			BERT trained on LM + trained on structure prediction  and contact predeciton and then fine tune for ppi tasks
+	d. Dataset: wget https://www.cs.virginia.edu/yanjun/jack/ppi/deepvhppi.tar.gz
+				tar -xvf deepvhppi.tar.gz
 </pre>
 
 5. A SARS-CoV-2 protein interaction map reveals targets for drug repurposing(Nature articles-Gold Standard):<br/>
