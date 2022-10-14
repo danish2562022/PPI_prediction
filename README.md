@@ -15,7 +15,7 @@
 		code and data: https://bioinformatics.cs.vt.edu/~alzahraa/denovo
 </pre>
 
-1. Deep Learning-Powered Prediction of Human-Virus Protein-Protein Interactions(Dec-2021):<br/>
+2. Deep Learning-Powered Prediction of Human-Virus Protein-Protein Interactions(Dec-2021):<br/>
 <pre>
 	a. Negative sampling: Dissimilarity-Based Negative Sampling(A->B(sequence similarity > Threshold) , B->C(positive interaction) then A and C cannot be negative sample)
 	b. Dataset imabalalance recommended to replicate real world scenario: 1:10 (has been proven reasonable to predict PPI)						
@@ -26,7 +26,7 @@
 </pre>
 ![alt text](images/ppi_table.png)
 
-2. Deep Viral: prediction of novel virus-host interactions from protein sequences and infectious disease phenotypes(April-2021):<br/>
+3. Deep Viral: prediction of novel virus-host interactions from protein sequences and infectious disease phenotypes(April-2021):<br/>
 <pre>
 	a. Dataset sources: HPIDB, String, SARS-CoV-2 interatcions #332 PPI from 27 viral proteins(https://www.nature.com/articles/s41586-020-2286-9, Protein sequences retrieved from swiss-prot db)
         b. Negative sampling:
@@ -41,7 +41,7 @@
 	 
 </pre>
 ![alt text](images/DeepViral_workflow.png)
-3. DWPPI- A Deep Learning Approach for predicting PPI in plants based multi-source information with a large scale biological network(March-2022):<br/>
+4. DWPPI- A Deep Learning Approach for predicting PPI in plants based multi-source information with a large scale biological network(March-2022):<br/>
 <pre>
         a. Dataset sources: Plant PPIs
         b. Negative sampling:
@@ -51,7 +51,7 @@
         e. Dataset size: 28110+81989+51514  positive interactions 
 
 </pre>
-4. Transfer Learning via multi-scale convolutional neural layers for human-virus ppi prediction(16 July-2021):<br/>
+5. Transfer Learning via multi-scale convolutional neural layers for human-virus ppi prediction(16 July-2021):<br/>
 <pre>
         a. Dataset sources: HPIDB, VirHostNet, VirusMentha, PHISTO, and PDB                                                                                                                    
         b. Dataset Target for fine-tuning: human-SARS-CoV-2-PPIs(568)
@@ -73,7 +73,7 @@
 
 ![alt text](images/Transfer_learning_ppi.png)
 
-5. LSTM-PHV: prediction of human-virus protein-protein interactions by LSTM with word2vec:<br/>
+6. LSTM-PHV: prediction of human-virus protein-protein interactions by LSTM with word2vec:<br/>
 <pre>
     a.Here we cloned, tagged and expressed 26 of the 29
 	  SARS-CoV-2 proteins in human cells and identifed the human proteins that physically
@@ -99,7 +99,7 @@
 </pre>
 ![alt text](images/lstm_pvg.png)
 
-6. Transfer Learning for predicting virus-host protein interactions for novel virus sequences
+7. Transfer Learning for predicting virus-host protein interactions for novel virus sequences
 <pre>
 	a. Database: i.) Virus-host dataset from HPIDB(22,653-pairs)--> Training
 				 ii.) SARs-cov-2-human interaction positive pairs from BioGrid(13,947 pairs) --> only for test
@@ -134,7 +134,7 @@
 
 
 
-7. A mulitask transfer learning framework for the prediction of virus-human protein-protein interactions
+8. A mulitask transfer learning framework for the prediction of virus-human protein-protein interactions
 <pre>
 	a. Train on intra-species ppi and test on interspecies(virus-human)(Reason to use human-human ppis are given in the paper, good to write in thesis)
 	b. Database: 
@@ -170,7 +170,7 @@
 ![alt text](images/MTT_image.png)
 
 
-8. A SARS-CoV-2 protein interaction map reveals targets for drug repurposing(Nature articles-Gold Standard):<br/>
+9. A SARS-CoV-2 protein interaction map reveals targets for drug repurposing(Nature articles-Gold Standard):<br/>
 <pre>
     a.Here we cloned, tagged and expressed 26 of the 29
 	  SARS-CoV-2 proteins in human cells and identifed the human proteins that physically
@@ -180,7 +180,7 @@
 	c. SARS sequence from GenScript
 </pre>
 
-9. ProteinNet: a standardized dataset for ml of protein structure<br/>
+10. ProteinNet: a standardized dataset for ml of protein structure<br/>
 <pre>
     a. Based on sequence identity
 </pre>
