@@ -90,8 +90,18 @@
 				 ii.) SARs-cov-2-human interaction positive pairs from BioGrid(13,947 pairs) --> only for test
 				iii.) H1V1 - human interaction pairs(10,955 positive pairs except virus H1V1-human in train set and 381 true PPI, 381 negative between             H1V1 		and     Human for test set)
 				iv.) Ebola - human interaction pairs(11,341 positive pairs except virus Ebola-human in train set and 150 true PPI,150 negative between Ebola and 	Human for test set)
-				v.) Barman paper dataset(testing dataset is not completely unseen) (1036 positive + 1036 negative pairs)
-				vi.) denovo paper dataset: 
+				v.) Barman paper dataset(testing dataset is not completely unseen)--> Collected from VirusMint DB--> (1036 positive + 1036 negative pairs between 160 virus proteins and 667 human proteins)
+				vi.) denovo paper dataset: Dataset with protein motif information
+											Training set: 1590 pos, 1515 neg with virus SLim sequence
+											Test set: 425 posiitives, 425 negatives
+											Negative sampling based on distance
+				vii.) Bacteria-Human PPIs:  HPIDB DB
+											Bacillus anthracus: 3057 PPIs
+											Yersinia Pestis: 4020 PPIs
+											Franciselia Tularensis: 1346 PPIs	 
+
+										 
+
 					<b>Note: All datasets are available</b>
 
 	b. Negative sampling:
@@ -108,23 +118,36 @@
 
 
 
-6. Transfer Learning for predicting virus-host protein interactions for novel virus sequences
+7. A mulitask transfer learning framework for the prediction of virus-human protein-protein interactions
 <pre>
-	a. Database: i.) Virus-host dataset from HPIDB(22,653-pairs)--> Training
-				 ii.) SARs-cov-2-human interaction positive pairs from BioGrid(13,947 pairs) --> only for test
-				iii.) H1V1 - human interaction pairs(10,955 positive pairs except virus H1V1-human in train set and 381 true PPI, 381 negative between             H1V1 		and     Human for test set)
-				iv.) Ebola - human interaction pairs(11,341 positive pairs except virus Ebola-human in train set and 150 true PPI,150 negative between Ebola and 	Human for test set)
-				v.) Barman paper dataset(testing dataset is not completely unseen) (1036 positive + 1036 negative pairs)
-				vi.) denovo paper dataset: 
-					<b>Note: All datasets are available</b>
+	a. Train on intra-species ppi and test on interspecies(virus-human)(Reason to use human-human ppis are given in the paper, good to write in thesis)
+	b. Database: 
+				i.) APID, IntAct, VirusMetha, UniProt (collected from these DB using PSICQUIC web service)--> <b>11941</b> curated and experimented PPIs(246 viruses and human)--> From this Novel H1N1-Human PPIs and Novel Ebola-Human PPIs data generated	
+					 Note: Positve training data for the Novel H1N1 includes PPIs between human and all viruses except H1N1(same for Ebola)				  				 
+				ii.) DeepViral Paper Leave-one-species-out-benchmark datasets: Dataset retrived from <b>HPIDB</b> DB to include all Pathogen-Host interactions that have confidence scores available and are associated with an existing virus family in the NCBI taxonomy: <b>24,678 PPIs</b>(1066 virus protein from 14 families)
 
+					Note: Negative tesing and training dataset were created from all the virus and 16,627 human protein from uniprot(not present in training set)
+
+				iii.) H1V1 - human interaction pairs(10,955 positive pairs except virus H1V1-human in train set and 381 true PPI, 381 negative between             H1V1 		and     Human for test set): They did not use this because negative dataset is based on distance based
+				iv.) Ebola - human interaction pairs(11,341 positive pairs except virus Ebola-human in train set and 150 true PPI,150 negative between Ebola and 	Human for test set): They did not use this because negative dataset is based on distance based
+				v.) Barman paper dataset(testing dataset is not completely unseen) (1036 positive + 1036 negative pairs)
+				vi.) denovo paper dataset: Dataset with protein motif information
+											Training set: 1590 pos, 1515 neg with virus SLim sequence
+											Test set: 425 posiitives, 425 negatives
+											Negative sampling based on distance
+				vii.) Bacteria-Human PPIs:  HPIDB DB
+											Bacillus anthracus: 3057 PPIs
+											Yersinia Pestis: 4020 PPIs
+											Franciselia Tularensis: 1346 PPIs
 	b. Negative sampling:
-			Dissimilaroty-based negative sampling
+			Three methods:	i.) Random sampling
+							Not used Dissimilarity-based method because it is biased as they restrict the number of tested human proteins
+							
 	c. 1:10 positive:negative ratio
 	d. Model:
-			BERT trained on LM + trained on structure prediction  and contact predeciton and then fine tune for ppi tasks
-	d. Dataset: wget https://www.cs.virginia.edu/yanjun/jack/ppi/deepvhppi.tar.gz
-				tar -xvf deepvhppi.tar.gz
+			i.) classification for human-virus ppi and regression for human-human ppi(string database data for regression)
+			ii.) Combined loss function: Cls. loss + weight*Reg. loss
+	d. Dataset and code: https://git.l3s.uni-hannover.de/dong/multitask-transfer
 </pre>
 
 8. A SARS-CoV-2 protein interaction map reveals targets for drug repurposing(Nature articles-Gold Standard):<br/>
