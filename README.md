@@ -1,6 +1,20 @@
 
 ### Research Papers
-1. 
+1. DeNovo: Virus-host sequence-based protein-protein interaction prediction
+<pre>
+	i.) Database: VirusMentha 
+	ii.) Achieved 81 to 86% accuracy on PPis of viral proteins that have no and distant sequence similarity to the ones used for training
+	iii.) Negative sampling:
+				Sequence based negative sampling
+	iv.) 1:1::pos:neg
+	v.) Models used support vector machines on hand crafted features(done by clustering based on physiochemical properties)
+		   --> concatenate two protein features before giving it to model	
+	vi.) Dataset: 5445 PPI between 2340 human proteins and 445 viral proteins, covering 172 ciral species in 28 subfamilies(After some filteration)
+					Sequences from uniprot
+	vii.) They tested random sampling, but it performe worst in inter species ppis, but well in intra-species ppis
+		code and data: https://bioinformatics.cs.vt.edu/~alzahraa/denovo
+</pre>
+
 1. Deep Learning-Powered Prediction of Human-Virus Protein-Protein Interactions(Dec-2021):<br/>
 <pre>
 	a. Negative sampling: Dissimilarity-Based Negative Sampling(A->B(sequence similarity > Threshold) , B->C(positive interaction) then A and C cannot be negative sample)
@@ -154,6 +168,8 @@
 	f. Dataset and code: https://git.l3s.uni-hannover.de/dong/multitask-transfer
 </pre>
 ![alt text](images/MTT_image.png)
+
+
 8. A SARS-CoV-2 protein interaction map reveals targets for drug repurposing(Nature articles-Gold Standard):<br/>
 <pre>
     a.Here we cloned, tagged and expressed 26 of the 29
