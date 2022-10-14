@@ -1,5 +1,6 @@
 
 ### Research Papers
+1. 
 1. Deep Learning-Powered Prediction of Human-Virus Protein-Protein Interactions(Dec-2021):<br/>
 <pre>
 	a. Negative sampling: Dissimilarity-Based Negative Sampling(A->B(sequence similarity > Threshold) , B->C(positive interaction) then A and C cannot be negative sample)
@@ -109,6 +110,7 @@
 	c. 1:10 positive:negative ratio
 	d. Model:
 			BERT trained on LM + trained on structure prediction  and contact predeciton and then fine tune for ppi tasks
+			Compared their model results with 7 other models
 	d. Dataset: wget https://www.cs.virginia.edu/yanjun/jack/ppi/deepvhppi.tar.gz
 				tar -xvf deepvhppi.tar.gz
 </pre>
@@ -135,10 +137,8 @@
 											Training set: 1590 pos, 1515 neg with virus SLim sequence
 											Test set: 425 posiitives, 425 negatives
 											Negative sampling based on distance
-				vii.) Bacteria-Human PPIs:  HPIDB DB
-											Bacillus anthracus: 3057 PPIs
-											Yersinia Pestis: 4020 PPIs
-											Franciselia Tularensis: 1346 PPIs
+				vii.) Intra human PPI: From InACT(<b>96,458 PPIs</b>), only contaings human proteins which appears in the dataset of virus-human proteins
+				
 	b. Negative sampling:
 			Three methods:	i.) Random sampling
 							Not used Dissimilarity-based method because it is biased as they restrict the number of tested human proteins
@@ -147,9 +147,13 @@
 	d. Model:
 			i.) classification for human-virus ppi and regression for human-human ppi(string database data for regression)
 			ii.) Combined loss function: Cls. loss + weight*Reg. loss
-	d. Dataset and code: https://git.l3s.uni-hannover.de/dong/multitask-transfer
+	e. Compared their models results with:	
+		i.) Generalized and Denovo methods: based on hand crafted input features and trained on SVM
+		ii. ) Doc2vec and MOTIFTRANSFORMER: based on sequence embedding
+		iii.) Barmen's paper: based on domain-domain association 
+	f. Dataset and code: https://git.l3s.uni-hannover.de/dong/multitask-transfer
 </pre>
-
+![alt text](images/MTT_image.png)
 8. A SARS-CoV-2 protein interaction map reveals targets for drug repurposing(Nature articles-Gold Standard):<br/>
 <pre>
     a.Here we cloned, tagged and expressed 26 of the 29
