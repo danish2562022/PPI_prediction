@@ -170,7 +170,45 @@
 ![alt text](images/MTT_image.png)
 
 
-9. A SARS-CoV-2 protein interaction map reveals targets for drug repurposing(Nature articles-Gold Standard):<br/>
+9. Cross-attention PHV: Prediction of human and virus protein-protein interactions using cross-attention-based neutral networs(Oct-2022):<br/>
+<pre>
+    a. Max protein sequences length =9000 (1D CNN to the W2V generated feature matrices reduced computational costs, thus allow longer length sequences)
+	b. Database: i.) Denovo dataset(Train: 5024 positive ppis and 4734 negative
+								Test: 425 positive and 425 negative)
+				ii.) Human-unknown virsus from HVIDB DB
+				iii.) Human-SARS-Cov2 PPI dataset from  BIOGRID DB(14218 Positive PPIs)
+	c. Model: 
+			W2V --> 1D CNN --> Cross Attention --> FC --> Softmax
+	d. Best results among all above methods
+
+	Web-api: http://kurata35.bio.kyutech.ac.jp/Cross-attention_PHV/
+	data: https://github.com/kuratahiroyuki/cross-attention_PHV
+</pre>
+
+10. Review on Deep Learning frameworks for protein-protein interaction prediction(15th June 2022):<br/>
+<pre>
+    a. Max protein sequences length =9000 (1D CNN to the W2V generated feature matrices reduced computational costs, thus allow longer length sequences)
+	b. Database: i.) Denovo dataset(Train: 5024 positive ppis and 4734 negative
+								Test: 425 positive and 425 negative)
+				ii.) Human-unknown virsus from HVIDB DB
+				iii.) Human-SARS-Cov2 PPI dataset from  BIOGRID DB(14218 Positive PPIs)
+	c. Model: 
+			W2V --> 1D CNN --> Cross Attention --> FC --> Softmax
+	d. Best results among all above methods
+
+	Web-api: http://kurata35.bio.kyutech.ac.jp/Cross-attention_PHV/
+	data: https://github.com/kuratahiroyuki/cross-attention_PHV
+</pre>
+![alt text](images/timeline.png)
+
+![alt text](images/DB.png)
+
+![alt text](images/paper.png)
+
+![alt text](images/results.png)
+
+
+10. A SARS-CoV-2 protein interaction map reveals targets for drug repurposing(Nature articles-Gold Standard):<br/>
 <pre>
     a.Here we cloned, tagged and expressed 26 of the 29
 	  SARS-CoV-2 proteins in human cells and identifed the human proteins that physically
