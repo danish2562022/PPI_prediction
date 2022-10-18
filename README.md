@@ -23,6 +23,7 @@
 	d. Train on large human PPI, and later fine tune on specific PPI(eg. Human-SARs-Cov-2 PPIs)
 	e. DeepVHPPI: First trained on supervised structure prediction, and then fine tune for PPI
 	f. Alphafold-2 could be used for PPI 
+	g. Databases: HVIDB and HPIDB
 </pre>
 ![alt text](images/ppi_table.png)
 
