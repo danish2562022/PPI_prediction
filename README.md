@@ -39,6 +39,7 @@
         f. Keep test set completely different than train set(to prevent data leakage)
         g. Evaluation dataset sufferrs from several drawbacks
 	h. Dataset szie: 24,678 positive interactions and 1,066 viral protein from 14 virus families and 292 virus taxa(length<=1000)
+	i. Dataset available: https://github.com/bio-ontology-research-group/DeepViral
 	 
 </pre>
 ![alt text](images/DeepViral_workflow.png)
