@@ -223,15 +223,15 @@
 11. Large-scale discovery of protein interactions at residue resolution using co-evolution calculated from genomic sequences(Nature Communications, <b>suggested by Aleksej</b>)<br/>
 <pre>
     a. Dataset:
-    	  i.)   Non Interacting pairs: 3987 from paper number 10
-		Interacting pairs: 561   from paper number 10
+    	  i.)   Non Interacting pairs: 3987
+		Interacting pairs: 1675   
 	
 </pre>
 12. Improved prediction of protein-protein interactions using AF2(Nature Communications, <b>suggested by Aleksej</b>)<br/>
 <pre>
     a. Dataset:
     	 i.)   Non Interacting pairs: 3987 from paper number 11
-		Interacting pairs: 1667   from paper number 11
+		Interacting pairs: 1675 from paper number 11
 	 ii.)   Benchmark Version 5: 255 pairs from Protein–Protein Interaction Benchmarks: Docking Benchmark Version 5 and Affinity Benchmark Version 			2irs 
 			https://zlab.umassmed.edu/benchmark/ 
 			https://www.sciencedirect.com/science/article/pii/S0022283615004180
