@@ -23,6 +23,7 @@
 	d. Train on large human PPI, and later fine tune on specific PPI(eg. Human-SARs-Cov-2 PPIs)
 	e. DeepVHPPI: First trained on supervised structure prediction, and then fine tune for PPI
 	f. Alphafold-2 could be used for PPI 
+	g. Databases: HVIDB and HPIDB
 </pre>
 ![alt text](images/ppi_table.png)
 
@@ -38,6 +39,7 @@
         f. Keep test set completely different than train set(to prevent data leakage)
         g. Evaluation dataset sufferrs from several drawbacks
 	h. Dataset szie: 24,678 positive interactions and 1,066 viral protein from 14 virus families and 292 virus taxa(length<=1000)
+	i. Dataset available: https://github.com/bio-ontology-research-group/DeepViral
 	 
 </pre>
 ![alt text](images/DeepViral_workflow.png)
@@ -217,11 +219,34 @@
 	c. SARS sequence from GenScript
 </pre>
 
-10. ProteinNet: a standardized dataset for ml of protein structure<br/>
+11. Large-scale discovery of protein interactions at residue resolution using co-evolution calculated from genomic sequences(Nature Communications, <b>suggested by Aleksej</b>)<br/>
+<pre>
+    a. Dataset:
+    	  i.)   Non Interacting pairs: 3987
+		Interacting pairs: 1675   
+	
+</pre>
+12. Improved prediction of protein-protein interactions using AF2(Nature Communications, <b>suggested by Aleksej</b>)<br/>
+<pre>
+    a. Dataset:
+    	 i.)   Non Interacting pairs: 3987 from paper number 11
+		Interacting pairs: 1675 from paper number 11
+	 ii.)   Benchmark Version 5: 255 pairs from Protein–Protein Interaction Benchmarks: Docking Benchmark Version 5 and Affinity Benchmark Version 			2irs 
+			https://zlab.umassmed.edu/benchmark/ 
+			https://www.sciencedirect.com/science/article/pii/S0022283615004180
+	 iii.)  Human ‘all-by-all’ reference interactome map of human binary protein interactions, or ‘HuRI’(Nature Article)
+         		http://www.interactome-atlas.org/download
+         
+    	 iv.)   Negatome: 
+            		Manual Stringent: The Manual dataset filtered against the IntAct dataset 
+	    		(http://mips.helmholtz-muenchen.de/proj/ppi/negatome/manual_stringent.txt) 
+</pre>
+
+13. ProteinNet: a standardized dataset for ml of protein structure<br/>
 <pre>
     a. Based on sequence identity
 </pre>
-10. Deep ppi codes and dataset<br/>
+14. Deep ppi codes and dataset<br/>
 <pre>
     a. https://github.com/gdario/deep_ppi
 </pre>
