@@ -261,9 +261,28 @@ Furthermore, our database resource provides tissue-specific expression profiles 
 viruses and 129 Gene Expression Omnibus series of differentially expressed genes post-viral infections(Collected) 
 
 ### Dataset Information
+All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfovg9KuSCTwp6C2P2os2Mj?usp=sharing
+<pre>
+1. Denovo:
+	csv_file_name: <b>Denovo_ppi_with_sequences.csv</b>
+	Number of positive pairs:  5718
+	Maximum length of sequences: 746
+	Number of Unique Proteins: 2781
+2. String_db:
+	human-human proteins
+	csv_file_name: <b>String_ppi_with_sequences.csv</b>
+	Total Number of pairs:  81380
+	experiment_score of all pairs > 500
+	Maximum length of sequences: 317
+	Number of Unique Proteins: 7181
+3. LSTM-PHV: 
+	human-virus ppis
+	csv_file_name: <b>lstm_phv_ppi_with_sequences.csv</b>
+	Number of positive pairs:  22383
+	Maximum length of sequences: 95
+	Number of Unique Proteins: 6878
 
-
-
+</pre>
 
 
 ### Models
