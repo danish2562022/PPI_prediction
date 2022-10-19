@@ -220,11 +220,33 @@
 	c. SARS sequence from GenScript
 </pre>
 
-10. ProteinNet: a standardized dataset for ml of protein structure<br/>
+11. Large-scale discovery of protein interactions at residue resolution using co-evolution calculated from genomic sequences(Nature Communications, <b>suggested by Aleksej</b>)<br/>
+<pre>
+    a. Dataset:
+    	  i.)   Non Interacting pairs: 3987 from paper number 10
+		Interacting pairs: 561   from paper number 10
+	 ii.)   Benchmark Version 5: 255 pairs from Protein–Protein Interaction Benchmarks: Docking Benchmark Version 5 and Affinity Benchmark Version 			2irs 
+			https://zlab.umassmed.edu/benchmark/ 
+			https://www.sciencedirect.com/science/article/pii/S0022283615004180
+	 iii.)  Human ‘all-by-all’ reference interactome map of human binary protein interactions, or ‘HuRI’(Nature Article)
+         		http://www.interactome-atlas.org/download
+         
+    	 iv.)   Negatome: 
+            		Manual Stringent: The Manual dataset filtered against the IntAct dataset 
+	    		(http://mips.helmholtz-muenchen.de/proj/ppi/negatome/manual_stringent.txt) 
+</pre>
+12. Improved prediction of protein-protein interactions using AF2(Nature Communications, <b>suggested by Aleksej</b>)<br/>
+<pre>
+    a. Dataset:
+    	Non Interacting pairs: 3987
+	Interacting pairs: 561
+</pre>
+
+13. ProteinNet: a standardized dataset for ml of protein structure<br/>
 <pre>
     a. Based on sequence identity
 </pre>
-10. Deep ppi codes and dataset<br/>
+14. Deep ppi codes and dataset<br/>
 <pre>
     a. https://github.com/gdario/deep_ppi
 </pre>
