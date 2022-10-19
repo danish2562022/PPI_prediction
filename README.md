@@ -225,6 +225,13 @@
     a. Dataset:
     	  i.)   Non Interacting pairs: 3987 from paper number 10
 		Interacting pairs: 561   from paper number 10
+	
+</pre>
+12. Improved prediction of protein-protein interactions using AF2(Nature Communications, <b>suggested by Aleksej</b>)<br/>
+<pre>
+    a. Dataset:
+    	 i.)   Non Interacting pairs: 3987 from paper number 11
+		Interacting pairs: 1667   from paper number 11
 	 ii.)   Benchmark Version 5: 255 pairs from Protein–Protein Interaction Benchmarks: Docking Benchmark Version 5 and Affinity Benchmark Version 			2irs 
 			https://zlab.umassmed.edu/benchmark/ 
 			https://www.sciencedirect.com/science/article/pii/S0022283615004180
@@ -234,12 +241,6 @@
     	 iv.)   Negatome: 
             		Manual Stringent: The Manual dataset filtered against the IntAct dataset 
 	    		(http://mips.helmholtz-muenchen.de/proj/ppi/negatome/manual_stringent.txt) 
-</pre>
-12. Improved prediction of protein-protein interactions using AF2(Nature Communications, <b>suggested by Aleksej</b>)<br/>
-<pre>
-    a. Dataset:
-    	Non Interacting pairs: 3987
-	Interacting pairs: 561
 </pre>
 
 13. ProteinNet: a standardized dataset for ml of protein structure<br/>
