@@ -188,8 +188,7 @@
 10. Review on Deep Learning frameworks for protein-protein interaction prediction(15th June 2022):<br/>
 <pre>
     a. Max protein sequences length =9000 (1D CNN to the W2V generated feature matrices reduced computational costs, thus allow longer length sequences)
-	b. Database: i.) Denovo dataset(Train: 5024 positive ppis and 4734 negative
-								Test: 425 positive and 425 negative)
+	b. Database: i.) <p>Negatome(for negative ppis)</p>
 				ii.) Human-unknown virsus from HVIDB DB
 				iii.) Human-SARS-Cov2 PPI dataset from  BIOGRID DB(14218 Positive PPIs)
 	c. Model: 
