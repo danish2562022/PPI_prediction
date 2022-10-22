@@ -264,6 +264,7 @@ viruses and 129 Gene Expression Omnibus series of differentially expressed genes
 All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfovg9KuSCTwp6C2P2os2Mj?usp=sharing
 <pre>
 1. Denovo:
+	Type of Data: Human-Virus PPIs
 	csv_file_name: <b>Denovo_ppi_with_sequences.csv</b>
 	Number of positive pairs:  5718
 	Maximum length of sequences: 746
