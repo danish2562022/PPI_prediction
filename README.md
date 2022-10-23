@@ -273,7 +273,7 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
 	human-human proteins
 	csv_file_name: <b>String_ppi_with_sequences.csv</b>
 	Total Number of pairs:  81380
-	experiment_score of all pairs > 500
+	experiment_score of all pairs > 500(came from https://bmcproc.biomedcentral.com/articles/10.1186/1753-6561-7-S7-S6)
 	Maximum length of sequences: 317
 	Number of Unique Proteins: 7181
 3. LSTM-PHV: 
