@@ -243,11 +243,15 @@
             		Manual Stringent: The Manual dataset filtered against the IntAct dataset 
 	    		(http://mips.helmholtz-muenchen.de/proj/ppi/negatome/manual_stringent.txt) 
 </pre>
+
+
 13. Bertology meets Biology
 <pre>
     a. Based on sequence identity
 </pre>
 ![alt text](images/berts.png)
+
+
 13. ProteinNet: a standardized dataset for ml of protein structure<br/>
 <pre>
     a. Based on sequence identity
