@@ -276,7 +276,7 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
 1. Denovo:
 	Type of Data: Human-Virus PPIs
 	csv_file_name: <b>Denovo_ppi_with_sequences.csv</b>
-	Preprocessing python script name: **Denovo_data_ppi_preprocessing.ipynb**
+	Preprocessing python script name: <b>Denovo_data_ppi_preprocessing.ipynb</b>
 	Number of positive pairs:  5718
 	Maximum length of sequences: 746
 	Number of Unique Proteins: 2781
@@ -291,7 +291,7 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
 3. LSTM-PHV: 
 	human-virus ppis
 	csv_file_name: <b>lstm_phv_ppi_with_sequences.csv</b>
-	Preprocessing python script name: **LSTM_PHV.ipynb**
+	Preprocessing python script name: <b>LSTM_PHV.ipynb</b>
 	Number of positive pairs:  22383
 	Maximum length of sequences: 95
 	Number of Unique Proteins: 6878
