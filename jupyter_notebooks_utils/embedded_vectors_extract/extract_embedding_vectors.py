@@ -7,7 +7,7 @@ import requests
 from tqdm.auto import tqdm
 
 
-parser = argparse.ArgumentParser(description='Extract embedding vectores')
+parser = argparse.ArgumentParser(description='Extract embedding vectors')
 
 parser.add_argument('--bert_model',
                       type =str,
@@ -38,6 +38,7 @@ def return_embedding_vectors_from_dict(sequences_dict, model_name):
     tokenizer = BertTokenizer.from_pretrained(f"Rostlab/{model_name}", do_lower_case=False)
     model = BertModel.from_pretrained(f"Rostlab/{model_name}")
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    device = 'cpu'
     model = model.to(device)
     model = model.eval()
 
