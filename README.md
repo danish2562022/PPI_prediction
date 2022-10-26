@@ -261,7 +261,7 @@
     a. https://github.com/gdario/deep_ppi
 </pre>
 
-
+All the databse: <b>http://www.ebi.ac.uk/Tools/webservices/psicquic/view/main.xhtml</b>
 	
 ### Database Information
 1. HPIDB 2.0: 45,238 manually curated entries PPI
