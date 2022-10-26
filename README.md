@@ -295,7 +295,42 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
 	Number of positive pairs:  22383
 	Maximum length of sequences: 95
 	Number of Unique Proteins: 6878
-
+4. Multitask-transfer
+	a. Bacteria-human
+		csv_file_name: <b>human_bacteria_ppi_with_sequences.csv</b>
+		Preprocessing python script name: <b>Multitask_transfer_learning_framework.ipynb</b>
+		Number of positive pairs:  5892
+		Maximum length of sequences: 1024
+		Number of Unique Proteins: 3134
+		Note:  Removed pairs having sequence of length more than 1024
+	b. Virus-human (Barman paper)
+		csv_file_name: <b>barman_human_virus_ppi_with_sequences.csv</b>
+		Preprocessing python script name: <b>Multitask_transfer_learning_framework.ipynb</b>
+		Number of positive pairs:  590
+		Maximum length of sequences: 1024
+		Number of Unique Proteins: 401
+		Note:  Removed pairs having sequence of length more than 1024
+	c.  H1N1 Virus-human pairs
+		csv_file_name: <b>h1n1_human_virus_ppi_with_sequences.csv</b>
+		Preprocessing python script name: <b>Multitask_transfer_learning_framework.ipynb</b>
+		Number of positive pairs:  8044
+		Maximum length of sequences: 1024
+		Number of Unique Proteins: 2866
+		Note:  Removed pairs having sequence of length more than 1024
+	d.  Ebola Virus-human pairs
+		csv_file_name: <b>ebola_human_virus_ppi_with_sequences.csv</b>
+		Preprocessing python script name: <b>Multitask_transfer_learning_framework.ipynb</b>
+		Number of positive pairs:  8260
+		Maximum length of sequences: 1024
+		Number of Unique Proteins: 2980
+		Note:  Removed pairs having sequence of length more than 1024
+	e. Sars-human pairs
+		csv_file_name: <b>sars_direct_interaction_virus_ppi_with_sequences.csv</b>
+		Preprocessing python script name: <b>Multitask_transfer_learning_framework.ipynb</b>
+		Number of positive pairs:  308
+		Maximum length of sequences: 1024
+		Number of Unique Proteins: 81
+		Note:  Removed pairs having sequence of length more than 1024
 </pre>
 
 
