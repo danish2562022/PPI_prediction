@@ -1,0 +1,1 @@
+Denovo_ppi_with_sequences.csv: 5700 approx positive pairs
