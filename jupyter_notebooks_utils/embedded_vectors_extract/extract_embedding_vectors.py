@@ -26,7 +26,7 @@ parser.add_argument('--output_path_pickle',
 
 
 
-def return_embedding_vectors_from_dict(sequences_dict, model_name):
+def return_embedding_vectors_from_dict(sequences,protein_name, model_name):
     """ 
     Return embedding vectors from Bert model
 
@@ -38,12 +38,8 @@ def return_embedding_vectors_from_dict(sequences_dict, model_name):
     tokenizer = BertTokenizer.from_pretrained(f"Rostlab/{model_name}", do_lower_case=False)
     model = BertModel.from_pretrained(f"Rostlab/{model_name}")
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-    device = 'cpu'
     model = model.to(device)
     model = model.eval()
-
-    sequences = (sequences_dict.values())
-    protein = (sequences_dict.keys())
     sequences = [re.sub(r"[UZOB]", "X", sequence) for sequence in sequences]
     ids = tokenizer.batch_encode_plus(sequences, add_special_tokens=True, pad_to_max_length=True)
     input_ids = torch.tensor(ids['input_ids']).to(device)
@@ -52,9 +48,9 @@ def return_embedding_vectors_from_dict(sequences_dict, model_name):
         embedding = model(input_ids=input_ids,attention_mask=attention_mask)[0]
     embedding = embedding.cpu().numpy()
     embedded_vectors_dct = {}
-    for i in range(len(embedding)):
-        embedded_vectors_dct[protein[i]] = embedding[i][0]
-
+    for i in tqdm(range(len(embedding))):
+        embedded_vectors_dct[protein_name[i]] = embedding[i][0]
+    
     return embedded_vectors_dct 
 
 
