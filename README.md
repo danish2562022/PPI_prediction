@@ -331,6 +331,29 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
 		Maximum length of sequences: 1024
 		Number of Unique Proteins: 81
 		Note:  Removed pairs having sequence of length more than 1024
+
+5.Transfer Learning for predicting virus-host protein interactions for novel virus sequences
+	a. Ebola-human
+		csv_file_name: <b>transfer_learning_zhou_with_sequences.csv</b>
+		Preprocessing python script name: <b>Transfer Learning for predicting virus-host protein interactions for novel virus sequences.ipynb</b>
+		Number of positive pairs:  11491 (before removing sequences of length more than 1024)
+		
+	b. H1N1-human (Barman paper)
+		csv_file_name: <b>transfer_learning_zhou_with_sequences.csv</b>
+		Preprocessing python script name: <b>Transfer Learning for predicting virus-host protein interactions for novel virus sequences.ipynb</b>
+		Number of positive pairs:  11239 (before removing sequences of length more than 1024
+	c.  Virus-human pairs(from yang et. paper)
+		csv_file_name: <b>transfer_learning_zhou_with_sequences.csv</b>
+		Preprocessing python script name: <b>Transfer Learning for predicting virus-host protein interactions for novel virus sequences.ipynb</b>
+		Number of positive pairs:  27186  (before removing sequences of length more than 1024)
+		Note:  Removed pairs having sequence of length more than 1024
+	d. combined virus-human pairs<b>(a+b+c)</b>
+		csv_file_name: <b>transfer_learning_zhou_with_sequences.csv</b>
+		Preprocessing python script name: <b>Transfer Learning for predicting virus-host protein interactions for novel virus sequences.ipynb</b>
+		Number of positive pairs:  24322 <b>(After removing pairs having sequence length more than 1024)</b>
+		Maximum length of sequences: 1024
+		Number of Unique Proteins: 5619
+		Note:  Removed pairs having sequence of length more than 1024
 </pre>
 
 
