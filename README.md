@@ -359,6 +359,8 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
 
 ### Models
 
+1. FC model trained on embedding vectors(element wise) 
+
 
 
 ### Task with date
