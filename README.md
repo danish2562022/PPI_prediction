@@ -362,15 +362,16 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
 1. FC model trained on embedding vectors(element wise) 
 
 <pre>
-   Weights and model weights: <b>https://github.com/danish2562022/PPI_prediction/blob/main/models/model_on_embedding_vectors/model_01_11_2022/</b>7
-   
+   Weights and model weights: <b>https://github.com/danish2562022/PPI_prediction/blob/main/models/model_on_embedding_vectors/model_01_11_2022/</b>
  </pre>
-   
    ![alt text](images/model_result.png)
 
 
 
 ### Task with date
+<pre>
+First Model Trained: 01/11/2022 (model_on_embedding_vectors/model_01_11_2022)
+</pre>
 
 
 
