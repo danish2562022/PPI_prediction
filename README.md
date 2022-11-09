@@ -356,7 +356,7 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
 		Note:  Removed pairs having sequence of length more than 1024
 </pre>
 
-
+### Jupyter Notebook Info(It is very confusing, so it is better to keep track of all jupyter notebooks :) ): 
 ### Models
 
 1. FC model trained on embedding vectors(element wise) 
