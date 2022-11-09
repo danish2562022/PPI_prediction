@@ -357,6 +357,10 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
 </pre>
 
 ### Jupyter Notebook Info(It is very confusing, so it is better to keep track of all jupyter notebooks :sweat_smile: ) 
+
+<pre>
+1. jupyter_notebooks_utils/final_data_with_embededd_vectors/train_Set_analysis.ipynb: Analysis of test and train set and also verification of independecny of train and test set 
+</pre>
 ### Models
 
 1. FC model trained on embedding vectors(element wise) 
