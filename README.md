@@ -369,6 +369,16 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
    Weights and model weights: <b>https://github.com/danish2562022/PPI_prediction/blob/main/models/model_on_embedding_vectors/model_01_11_2022/</b>
  </pre>
    ![alt text](images/1st_model.png)
+   
+ 2. FC model trained on embedding vectors(concatenated and mean) 
+ <pre>
+   Weights and model weights: <b>https://github.com/danish2562022/PPI_prediction/blob/main/models/model_on_embedding_vectors/model_14_11_2022/</b>
+ </pre>
+ 
+ 3. Conv model trained on embedding vectors(concatenated and mean) 
+ <pre>
+   Weights and model weights: <b>https://github.com/danish2562022/PPI_prediction/blob/main/models/model_on_embedding_vectors/model_14_11_2022/</b>
+ </pre>
 
 
 
