@@ -390,7 +390,7 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
 ### Task with date
 <pre>
 First Model Trained: 01/11/2022 (model_on_embedding_vectors/model_01_11_2022)
-Sexonf Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
+Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
 </pre>
 
 
