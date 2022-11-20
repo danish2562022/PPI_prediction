@@ -384,7 +384,15 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
    Results in point 2.
  </pre>
 
+### Experimental Design
+<pre>
+To Do:
 
+1. Trained on mean: Under Process
+2. Trained on class tokens: Under Process
+3. Trained on 1024*seq length input_vectors: Under Process
+4. At the end : fine tune bert for one or two epochs
+</pre>
 
 
 ### Task with date
