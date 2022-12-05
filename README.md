@@ -260,6 +260,11 @@
 <pre>
     a. https://github.com/gdario/deep_ppi
 </pre>
+15. AutoPPI(data-leakage problem)<br/>
+<pre>
+    a. model : Joint-joint(p.concat(p')), siamese-joint, siamese-siamese
+    b. Github: https://github.com/muhaochen/seq_ppi
+</pre>
 
 All the databse: <b>http://www.ebi.ac.uk/Tools/webservices/psicquic/view/main.xhtml</b>
 	
