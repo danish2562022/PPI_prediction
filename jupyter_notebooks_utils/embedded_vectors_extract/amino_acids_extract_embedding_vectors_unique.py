@@ -38,9 +38,13 @@ def return_embedding_vectors_from_dict(sequences,protein_name, model_name = 'pro
     print(f"Rostlab/{model_name}")
     tokenizer = BertTokenizer.from_pretrained(f"Rostlab/{model_name}", do_lower_case=False)
     model = BertModel.from_pretrained(f"Rostlab/{model_name}")
-    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-    model = model.to(device)
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    device = torch.device("cuda")
+    
+
     model = model.eval()
+    model = torch.nn.DataParallel(model)
+    model = model.to(device)
     sequences = [re.sub(r"[UZOB]", "X", sequence) for sequence in sequences]
     ids = tokenizer.batch_encode_plus(sequences, add_special_tokens=True, pad_to_max_length=True)
     input_ids = torch.tensor(ids['input_ids']).to(device)
