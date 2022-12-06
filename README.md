@@ -404,10 +404,11 @@ To Do:
 <pre>
 First Model Trained: 01/11/2022 (model_on_embedding_vectors/model_01_11_2022)
 Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
-HP tuning of Model on Sum: 29/11/2022 (Report: https://wandb.ai/danish2562022/PI__prediction_fc__hyperparameter_tuning_sum_vectors/reports/Edit-Share-FC-connected-models-on-the-sum-of-embedding-vectors-Hyperparameter-Tuning---VmlldzozMDUzMDkz?accessToken=9h8t7j9smnh8hvaa7xik9n4e0od8135563n1c7zlmewlk9314zvnahr9gdic08k6)
-HP tuning of Model on Cls: 29/11/2022 (Report: https://wandb.ai/danish2562022/PI__prediction_fc__hyperparameter_tuning_cls_vector/reports/FC-connected-models-on-CLS-Token-Hyperparameter-Tuning---VmlldzozMDUzMzA3?accessToken=fzr8ed6u7c4r55f8tx9n1hhotv99xwklwxsclxzlqpxcwdgm5o5cpwi82rqzuc3u)
-HP tuning of Model on mean: 29/11/2022 (Report: https://wandb.ai/danish2562022/PI__prediction_fc__hyperparameter_tuning/reports/FC-connected-models-on-mean-of-embedding-vectors-Hyperparameter-Tuning---VmlldzozMDUwNDcx?accessToken=gudch9ynozjnlth0d6bpycoy5eijzqgtf1louu6mgnwjf2umqvzg201m2nkp2l92)
-
+<b> Approach 1: Concatenating Protein Sequences </b>
+	HP tuning of Model on Sum: 29/11/2022 (Report: https://wandb.ai/danish2562022/PI__prediction_fc__hyperparameter_tuning_sum_vectors/reports/Edit-Share-FC-connected-models-on-the-sum-of-embedding-vectors-Hyperparameter-Tuning---VmlldzozMDUzMDkz?accessToken=9h8t7j9smnh8hvaa7xik9n4e0od8135563n1c7zlmewlk9314zvnahr9gdic08k6)
+	HP tuning of Model on Cls: 29/11/2022 (Report: https://wandb.ai/danish2562022/PI__prediction_fc__hyperparameter_tuning_cls_vector/reports/FC-connected-models-on-CLS-Token-Hyperparameter-Tuning---VmlldzozMDUzMzA3?accessToken=fzr8ed6u7c4r55f8tx9n1hhotv99xwklwxsclxzlqpxcwdgm5o5cpwi82rqzuc3u)
+	HP tuning of Model on mean: 29/11/2022 (Report: https://wandb.ai/danish2562022/PI__prediction_fc__hyperparameter_tuning/reports/FC-connected-models-on-mean-of-embedding-vectors-Hyperparameter-Tuning---VmlldzozMDUwNDcx?accessToken=gudch9ynozjnlth0d6bpycoy5eijzqgtf1louu6mgnwjf2umqvzg201m2nkp2l92)
+<b>Note: Approach concatenating protein sequence cannot give accuracy more than 73.35%</b>
 </pre>
 
 
