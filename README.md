@@ -425,3 +425,4 @@ Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
 | Deep Learning Feature Embedding [[4](https://pubmed.ncbi.nlm.nih.gov/31245182/)] | 2019 |40 | 95% | 57.7% | 22.0% |
 | PPI-SVM [[5](https://pubmed.ncbi.nlm.nih.gov/30452960/)] | 2019 |44 | 96% | 65.3% | 22.3% |
 | PPI-LSTM [[6](https://arxiv.org/abs/1901.06268)] | 2019 |20 | 76-78% | 55.2% | 12.2% |
+| PPI-PseAAC [[7](https://pubmed.ncbi.nlm.nih.gov/30312687/)] | 2019 |89 | 83-93% | 66.0% | 23.2% |
