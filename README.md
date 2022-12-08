@@ -421,3 +421,4 @@ Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
 | --- | --- |--- |--- |--- |--- |
 | AutoPPI [[1](https://www.mdpi.com/1099-4300/23/6/643)]| 2021 |  9 | 97-98% | 53-56% | 11.3-12.6% |
 | Ensemble Attention [[2](https://www.frontiersin.org/articles/10.3389/fbioe.2020.00390/full)] | 2020 |20 | 95% | 67.3% | 26.8% |
+| Ensemble DNN [[3](https://www.sciencedirect.com/science/article/pii/S0925231218306337)] | 2019 |95 | 95% | 59.5% | 17.1% |
