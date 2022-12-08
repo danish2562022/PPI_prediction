@@ -262,7 +262,7 @@
 </pre>
 15. AutoPPI(data-leakage problem)<br/>
 <pre>
-    a. model : Joint-joint(p.concat(p')), siamese-joint, siamese-siamese
+    a. model : Joint-joint(p.concat(p')), siamese-joint, siamese-siameseComparing two deep learning sequence-based models for protein-protein interaction prediction.
     b. Github: https://github.com/muhaochen/seq_ppi
 </pre>
 
@@ -327,7 +327,7 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
 		Preprocessing python script name: <b>Multitask_transfer_learning_framework.ipynb</b>
 		Number of positive pairs:  8260
 		Maximum length of sequences: 1024
-		Number of Unique Proteins: 2980
+		Number of Unique Proteins: 2980Comparing two deep learning sequence-based models for protein-protein interaction prediction.
 		Note:  Removed pairs having sequence of length more than 1024
 	e. Sars-human pairs
 		csv_file_name: <b>sars_direct_interaction_virus_ppi_with_sequences.csv</b>
@@ -424,3 +424,4 @@ Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
 | Ensemble DNN [[3](https://www.sciencedirect.com/science/article/pii/S0925231218306337)] | 2019 |95 | 95% | 59.5% | 17.1% |
 | Deep Learning Feature Embedding [[4](https://pubmed.ncbi.nlm.nih.gov/31245182/)] | 2019 |40 | 95% | 57.7% | 22.0% |
 | PPI-SVM [[5](https://pubmed.ncbi.nlm.nih.gov/30452960/)] | 2019 |44 | 96% | 65.3% | 22.3% |
+| PPI-LSTM [[6](https://arxiv.org/abs/1901.06268)] | 2019 |20 | 76-78% | 55.2% | 12.2% |
