@@ -415,5 +415,9 @@ Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
 	/model_training_py/models/Approach_2_siamese_network_on_sum.ipynb
 </pre>
 
+### Previous model results(claimed and real accuracy on independent dataset )
 
-
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
