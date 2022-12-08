@@ -423,3 +423,4 @@ Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
 | Ensemble Attention [[2](https://www.frontiersin.org/articles/10.3389/fbioe.2020.00390/full)] | 2020 |20 | 95% | 67.3% | 26.8% |
 | Ensemble DNN [[3](https://www.sciencedirect.com/science/article/pii/S0925231218306337)] | 2019 |95 | 95% | 59.5% | 17.1% |
 | Deep Learning Feature Embedding [[4](https://pubmed.ncbi.nlm.nih.gov/31245182/)] | 2019 |40 | 95% | 57.7% | 22.0% |
+| PPI-SVM [[5](https://pubmed.ncbi.nlm.nih.gov/30452960/)] | 2019 |44 | 96% | 65.3% | 22.3% |
