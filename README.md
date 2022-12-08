@@ -297,7 +297,7 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
 	human-virus ppis
 	csv_file_name: <b>lstm_phv_ppi_with_sequences.csv</b>
 	Preprocessing python script name: <b>LSTM_PHV.ipynb</b>
-	Number of positive pairs:  22383
+	Number of positive pairs:  22383Multifaceted protein–protein interaction prediction based on Siamese residual RCNN
 	Maximum length of sequences: 95
 	Number of Unique Proteins: 6878
 4. Multitask-transfer
@@ -426,3 +426,4 @@ Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
 | PPI-SVM [[5](https://pubmed.ncbi.nlm.nih.gov/30452960/)] | 2019 |44 | 96% | 65.3% | 22.3% |
 | PPI-LSTM [[6](https://arxiv.org/abs/1901.06268)] | 2019 |20 | 76-78% | 55.2% | 12.2% |
 | PPI-PseAAC [[7](https://pubmed.ncbi.nlm.nih.gov/30312687/)] | 2019 |89 | 83-93% | 66.0% | 23.2% |
+| PPI-Multifaceted-siamese [[8](https://academic.oup.com/bioinformatics/article/35/14/i305/5529260/)] | 2019 |126 | 89-97% | 58.5-63.2% | 13.6-19.8% |
