@@ -427,4 +427,7 @@ Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
 | PPI-LSTM [[6](https://arxiv.org/abs/1901.06268)] | 2019 |20 | 76-78% | 55.2% | 12.2% |
 | PPI-PseAAC [[7](https://pubmed.ncbi.nlm.nih.gov/30312687/)] | 2019 |89 | 83-93% | 66.0% | 23.2% |
 | PPI-Multifaceted-siamese [[8](https://academic.oup.com/bioinformatics/article/35/14/i305/5529260/)] | 2019 |126 | 89-97% | 58.5-63.2% | 13.6% |
-| LightGBM-PPI [[9](https://www.sciencedirect.com/science/article/pii/S016974391930262X)] | 2019 |118 | 89-95% | 62.7 | 19.8% |
+| LightGBM-PPI [[9](https://www.sciencedirect.com/science/article/pii/S016974391930262X)] | 2019 |118 | 89-95% | 62.7% | 19.8% |
+| PPI-CNN/LSTM [[10](https://pubmed.ncbi.nlm.nih.gov/30071670/)] | 2018 |84 | 99% | 56.7% | 13.6% |
+| PPI-Hashemifar-CNN [[11](https://academic.oup.com/bioinformatics/article/34/17/i802/5093239)] | 2018 |206 | 95% | 61.4% | 16.8% |
+
