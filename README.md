@@ -417,7 +417,7 @@ Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
 
 ### Previous model results(claimed and real accuracy on independent dataset )
 
-| Paper Title | Year of Publication | Citation | Claimed Accuracy | Accuracy on Independent Test set(Hold out)|
-| --- | --- |--- |--- |--- |
-| git status | List all new or modified files |  List all new or modified files | List all new or modified files | List all new or modified files |
-| git diff | Show file differences that haven't been staged | List all new or modified files | List all new or modified files | List all new or modified files |
+| Paper Title | Year of Publication | Citation | Claimed Accuracy(50:50) | Accuracy on Independent Test set(Hold out)|  Average on Independent Test set(Hold out)(1:10)|
+| --- | --- |--- |--- |--- |--- |
+| AutoPPI | 2021 |  9 | List all new or modified files | List all new or modified files | List all new or modified files |
+| git diff | Show file differences that haven't been staged | List all new or modified files | List all new or modified files | List all new or modified files | List all new or modified files |
