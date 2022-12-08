@@ -266,6 +266,13 @@
     b. Github: https://github.com/muhaochen/seq_ppi
 </pre>
 
+16. Predicting protein-protein interactions through sequence based deep learning(data-leakage problem)<br/>
+<pre>
+    a. model : Joint-joint(p.concat(p')), siamese-joint, siamese-siameseComparing two deep learning sequence-based models for protein-protein interaction prediction.
+    b. Github: https://github.com/hashemifar/DPPI
+</pre>
+
+
 All the databse: <b>http://www.ebi.ac.uk/Tools/webservices/psicquic/view/main.xhtml</b>
 	
 ### Database Information
