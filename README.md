@@ -430,4 +430,6 @@ Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
 | LightGBM-PPI [[9](https://www.sciencedirect.com/science/article/pii/S016974391930262X)] | 2019 |118 | 89-95% | 62.7% | 19.8% |
 | PPI-CNN/LSTM [[10](https://pubmed.ncbi.nlm.nih.gov/30071670/)] | 2018 |84 | 99% | 56.7% | 13.6% |
 | PPI-Hashemifar-CNN [[11](https://academic.oup.com/bioinformatics/article/34/17/i802/5093239)] | 2018 |206 | 95% | 61.4% | 16.8% |
+| Sequence-based prediction [[12](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1700-2)] | 2018 |277 | 95% | 58.8% | 14.4% |
+| DeepPPI[[12](https://pubs.acs.org/doi/10.1021/acs.jcim.7b00028)] | 2017 | 142 | 86-93% | 67.0% | 24.9% |
 
