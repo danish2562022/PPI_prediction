@@ -419,5 +419,5 @@ Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
 
 | Paper Title | Year of Publication | Citation | Claimed Accuracy(50:50) | Accuracy on Independent Test set| Average Precision on Independent Test set(1:10)|
 | --- | --- |--- |--- |--- |--- |
-| AutoPPI [1](https://www.mdpi.com/1099-4300/23/6/643)| 2021 |  9 | 97-98% | 53-56% | 11.3-12.6 |
-| Ensembele Attention[2](https://www.frontiersin.org/articles/10.3389/fbioe.2020.00390/full) | Show file differences that haven't been staged | List all new or modified files | List all new or modified files | List all new or modified files | List all new or modified files |
+| AutoPPI [[1](https://www.mdpi.com/1099-4300/23/6/643)]| 2021 |  9 | 97-98% | 53-56% | 11.3-12.6 |
+| Ensembele Attention [[2](https://www.frontiersin.org/articles/10.3389/fbioe.2020.00390/full)] | Show file differences that haven't been staged | List all new or modified files | List all new or modified files | List all new or modified files | List all new or modified files |
