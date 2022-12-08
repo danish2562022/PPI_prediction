@@ -417,7 +417,7 @@ Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
 
 ### Previous model results(claimed and real accuracy on independent dataset )
 
-| Command | Description |
+| Paper Title | Citation | Claimed Accuracy | Accuracy on Independent Test set(Hold out) 
 | --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+| git status | List all new or modified files |  List all new or modified files | List all new or modified files |
+| git diff | Show file differences that haven't been staged | List all new or modified files | List all new or modified files |
