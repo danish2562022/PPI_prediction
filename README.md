@@ -417,7 +417,7 @@ Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
 
 ### Previous model results(claimed and real accuracy on independent dataset )
 
-| Paper Title | Year of Publication | Citation | Claimed Accuracy(50:50) | Accuracy on Independent Test set(1:1)| Average Precision on Independent Test set(1:10)|
+| Paper Title | Year of Publication | Citation | Claimed Accuracy(1:1) | Accuracy on Independent Test set(1:1)| Average Precision on Independent Test set(1:10)|
 | --- | --- |--- |--- |--- |--- |
 | AutoPPI [[1](https://www.mdpi.com/1099-4300/23/6/643)]| 2021 |  9 | 97-98% | 53-56% | 11.3-12.6% |
 | Ensemble Attention [[2](https://www.frontiersin.org/articles/10.3389/fbioe.2020.00390/full)] | 2020 |20 | 95% | 67.3% | 26.8% |
@@ -426,4 +426,5 @@ Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
 | PPI-SVM [[5](https://pubmed.ncbi.nlm.nih.gov/30452960/)] | 2019 |44 | 96% | 65.3% | 22.3% |
 | PPI-LSTM [[6](https://arxiv.org/abs/1901.06268)] | 2019 |20 | 76-78% | 55.2% | 12.2% |
 | PPI-PseAAC [[7](https://pubmed.ncbi.nlm.nih.gov/30312687/)] | 2019 |89 | 83-93% | 66.0% | 23.2% |
-| PPI-Multifaceted-siamese [[8](https://academic.oup.com/bioinformatics/article/35/14/i305/5529260/)] | 2019 |126 | 89-97% | 58.5-63.2% | 13.6-19.8% |
+| PPI-Multifaceted-siamese [[8](https://academic.oup.com/bioinformatics/article/35/14/i305/5529260/)] | 2019 |126 | 89-97% | 58.5-63.2% | 13.6% |
+| LightGBM-PPI [[9](https://www.sciencedirect.com/science/article/pii/S016974391930262X)] | 2019 |118 | 89-95% | 62.7 | 19.8% |
