@@ -443,12 +443,12 @@ Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
 
 ### Model to implement
 
-| Paper Title | Year of Publication | Citation | Claimed Accuracy(1:1) | Accuracy on Independent Test set(1:1)| Average Precision on Independent Test set(1:10)|
+| Paper Title | Input Features(Feature extraction) | Model used | Claimed Accuracy(1:1) | Accuracy on Independent Test set(1:1)| Average Precision on Independent Test set(1:10)|
 | --- | --- |--- |--- |--- |--- |
-| Sequence-based prediction [[12](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1700-2)] | 2018 |277 | 95% | 58.8% | 14.4% |
-| PPI-Hashemifar-CNN [[11](https://academic.oup.com/bioinformatics/article/34/17/i802/5093239)] | 2018 |206 | 95% | 61.4% | 16.8% |
+| Sequence-based prediction [[12](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1700-2)] | Autocovariance and Conjoint triad method | Multi-layer perceptron | 95% | 58.8% | 14.4% |
+| PPI-Hashemifar-CNN [[11](https://academic.oup.com/bioinformatics/article/34/17/i802/5093239)] | PSI-Blast |Siamese-CNN(element wise multiplication) | 95% | 61.4% | 16.8% |
 | DeepPPI[[12](https://pubs.acs.org/doi/10.1021/acs.jcim.7b00028)] | 2017 | 142 | 86-93% | 67.0% | 24.9% |
-| PPI-Multifaceted-siamese [[8](https://academic.oup.com/bioinformatics/article/35/14/i305/5529260/)] | 2019 |126 | 89-97% | 58.5-63.2% | 13.6% |
-| LightGBM-PPI [[9](https://www.sciencedirect.com/science/article/pii/S016974391930262X)] | 2019 |118 | 89-95% | 62.7% | 19.8% |
+| PPI-Multifaceted-siamese [[8](https://academic.oup.com/bioinformatics/article/35/14/i305/5529260/)] | Trained skipgram on small corpus |Siamese RCNN(GRU) | 89-97% | 58.5-63.2% | 13.6% |
+| LightGBM-PPI [[9](https://www.sciencedirect.com/science/article/pii/S016974391930262X)] | PseAAC,AutoCorrelation descriptor, Conjoint Tirad | Gradient Boosting | 89-95% | 62.7% | 19.8% |
 
 
