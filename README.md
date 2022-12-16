@@ -396,6 +396,13 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
    Results in point 2.
  </pre>
 
+  
+ 4. Siamese Network 
+  <pre>
+
+  </pre>
+  ![alt text](images/result_16_12_2023.png)
+
 ### Experimental Design
 <pre>
 To Do:
