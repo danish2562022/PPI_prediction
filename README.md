@@ -414,7 +414,9 @@ To Do:
 </pre>
 
 
-### Task with date
+### Task with date:
+
+#### 1. Machine Learning models related tasks
 <pre>
 First Model Trained: 01/11/2022 (model_on_embedding_vectors/model_01_11_2022)
 Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
@@ -427,6 +429,12 @@ Second Model Trained: 14/11/2022 (model_on_embedding_vectors/model_14_11_2022)
 
 <b> Approach 2: Siamese Network on sum of Protein A's amino acids embedding and Protein B's amino acids embedding(Date:06/12/2022)  </b>
 	/model_training_py/models/Approach_2_siamese_network_on_sum.ipynb
+</pre>
+
+#### 2. Datapreprocesssing to replicate previous published paper results
+
+<pre>
+--> Started writing code for data preprocessing(./dara_preprocessing_of_benchmark_dataset/): Date: 8th of Jan
 </pre>
 
 ### Previous model results(claimed and real accuracy on independent dataset )
