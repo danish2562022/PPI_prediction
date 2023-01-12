@@ -381,8 +381,12 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
 	<b>jupyter notebook to create this pickle file</b>: /mimer/NOBACKUP/groups/snic2019-35-21/PPI/pickle_files/sum_of_amino_acid_vector_pickle 					   			    creation.ipynb
 	
 2. <b>amino_acids_embedded_vectors_bert_bfd.pickle:</b> /mimer/NOBACKUP/groups/snic2019-35-21/PPI/pickle_files/
-	It has embedding of all proteins(Number of amino acids * 1024)
-
+	It has embedding of all proteins((Number of amino acids+2) * 1024)
+	Used to create sum_of_amino_acid_vector.pickle
+	<b>created in the script: </b> 	
+	https://github.com/danish2562022/PPI_prediction/blob/main/jupyter_notebooks_utils/embedded_vectors_extract/extracting_vectors.ipynb
+	https://github.com/danish2562022/PPI_prediction/blob/main/jupyter_notebooks_utils/embedded_vectors_extract/extract_embedding_vectors.py
+	
 </pre>
 ### Models
 
