@@ -177,15 +177,16 @@ def createRandomData(intLst, protLst, ratiosLst,numSets,folderName):
 
 
 def createGroupData(intLst,protLst,numGroups,minSizeSmall,minSizeLarge,maxAttempts=1000):
+
 	groups = []
 	groupDict = {}
 	groupInts = []
 	for attempt in range(0,maxAttempts):
-		#create groups, returning list of groups, and dictionary mapping proteins to groups
+
 		groups, groupDict = createProteinGroups(protLst,numGroups)
 		smallest1 = minSizeSmall
 		smallest2 = minSizeLarge
-		#split all interaction pairs into group pairs, returning list of list of groups
+
 		groupInts = assignPairsToGroups(intLst,groups,groupDict)
 		for i in range(0,len(groupInts)):
 			for j in range(i,len(groupInts[i])):
@@ -198,3 +199,40 @@ def createGroupData(intLst,protLst,numGroups,minSizeSmall,minSizeLarge,maxAttemp
 			return groups, groupDict, groupInts
 	else:
 		return None, None, None
+
+
+
+#Primary function for creating heldout train and test data
+#generates held out sizes of non-overlapping train and test data, such that no protein in the training data appears in the test data,
+#and writes the sets to files.  The number of sets will be of size (len(groups)*len(groups)+len(groups))/2
+#function generates 1 folder, X train set, and X*N test sets where n is the length of the 2nd argument of tuple pairs
+#groups and groupInts are lists containing groups of proteins, and the known interactions per groupPair
+#ratioslst is a tuple contianing the following information (A,B,C,D,E,F),[(A1,D1,E1,F1)...]
+#lst tuple arg1, tuple (A,B,C,D,E,F)
+#A -- number of positive pairs per small group when held out group is small, 'all' for all
+#B -- number of positive pairs per large group when held out group is small, 'all' for all
+#C -- number of positive pairs per small group when held out group is large, 'all' for all
+#D -- number of positive pairs per large group when held out group is large, 'all' for all
+#E -- multiplier of number of positive pairs to calculate number of negative pairs
+#F -- file prefix for training data
+#lst tuple arg2, lst of tuples [(A1,D1,E1,F1),(A2,D2,E2,F2)...]
+#arguments are same as training data tuple
+
+def genCrossHeldOutDataWithGroups(groups,groupInts,ratiosLst,folderName):
+
+	PPIPUtils.makeDir(folderName)
+	for i in range(0,len(groups)):
+		for j in range(i,len(groups)):
+			trainPos = []
+			trainNeg = []
+			testPos = []
+			testNeg = []
+			for item in ratiosLst[1]:
+				testPos.append([])
+				testNeg.append([])
+			
+			for k in range(0,6):
+				for l in range(k,6):
+
+					if (k,l) == (i,j):
+						testIdx 
