@@ -380,7 +380,7 @@ All data are available at: https://drive.google.com/drive/folders/1xF6MgGF5Ctfov
 	It has embedding vectors on which final model was trained
 	<b>jupyter notebook to create this pickle file</b>: /mimer/NOBACKUP/groups/snic2019-35-21/PPI/pickle_files/sum_of_amino_acid_vector_pickle 					   			    creation.ipynb
 	
-2. <b>amino_acids_embedded_vectors_bert_bfd.pickle:<b> /mimer/NOBACKUP/groups/snic2019-35-21/PPI/pickle_files/
+2. <b>amino_acids_embedded_vectors_bert_bfd.pickle:</b> /mimer/NOBACKUP/groups/snic2019-35-21/PPI/pickle_files/
 	It has embedding of all proteins(Number of amino acids * 1024)
 
 </pre>
